@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -12,7 +12,7 @@
 }
 
 .content1 {
-  background-image: url("images/backgroundImage.avif");
+  background-image: url('images/backgroundImage.avif');
   background-repeat: no-repeat;
   width: 600px;
   height: 100vh;
@@ -60,7 +60,7 @@
   display: grid;
   gap: 1rem 5rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 60px);
+  grid-template-rows: repeat(2, 60px);
   box-shadow: 5px 13px 24px -11px rgba(0, 0, 0, 0.4);
 }
 
@@ -87,6 +87,11 @@
   border-width: 1.5px;
 }
 
+.content2-a div input.password,
+.content2-a div input.confirmPassword {
+  height: 34px;
+}
+
 .content2-a div input:focus {
   border-color: rgb(0, 115, 255);
   box-shadow: 2px 3px 12px 0.7px rgba(0, 0, 0, 0.18);
@@ -95,6 +100,10 @@
 .content2-a div input.notMatch,
 .content2-a div input.notMatch:focus {
   border-color: red;
+}
+
+.errorMessage {
+  color: red;
 }
 
 .content2-b {
@@ -121,4 +130,3 @@
   font-weight: 600;
   text-decoration: none;
 }
-
